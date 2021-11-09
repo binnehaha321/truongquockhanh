@@ -1,5 +1,4 @@
 .menu {
-    // display: none;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -101,5 +100,17 @@
             display: block;
             opacity: 1;
         }
+    }
+}
+
+@media screen and (max-width: 473px) {
+    .normal-bold {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 367px) {
+    .normal-bold {
+        font-size: 18px;
     }
 }

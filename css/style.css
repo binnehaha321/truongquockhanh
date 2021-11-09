@@ -1171,5 +1171,15 @@ a {
     opacity: 1;
   }
 }
+@media screen and (max-width: 473px) {
+  .normal-bold {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 367px) {
+  .normal-bold {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
