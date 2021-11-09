@@ -1,0 +1,74 @@
+.contact {
+    padding: 100px 25% 48px;
+
+    &-top {
+
+        &-desc {
+            margin: 30px auto;
+        }
+    }
+
+    &-bottom {
+        padding-top: 122px;
+
+        & form {
+            
+            .contact-bottom__name {
+                text-transform: capitalize;
+            }
+            
+            & input,
+            & textarea {
+                margin-bottom: 60px;
+                resize: vertical;
+                box-sizing: border-box;
+                background: none;
+            }
+            
+            & input::placeholder {
+                text-transform: uppercase;
+                color: #000;
+                word-break: break-all;
+            }
+
+            & button:hover {
+                opacity: .6;
+                cursor: pointer;
+            }
+
+            & input[class~=small] {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 50px 10%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .contact-bottom {
+        form {
+            & input, textarea {
+                width: 90%;
+            }
+
+            & input[class~=large] {
+                display: none;
+            }
+
+            & input[class~=small] {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .contact {
+        padding: 60px 5%;
+    }
+}

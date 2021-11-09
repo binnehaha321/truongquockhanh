@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sass -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Typography-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <!-- My Javascript -->
+    <script src="./script.js"></script>
+
+    <title>MyCV</title>
+</head>
+<body>
+    <menu class="menu">
+        <!-- Close menu -->
+        <box-icon name='x' class="menu-close"></box-icon>
+        <box-icon name='x' class="menu-close-responsive" color='#ffffff' ></box-icon>
+
+        <div class="menu-container">
+            <ul>
+                <li><a href="#summary" class="menu-item">summary</a></li>
+                <li><a href="#about" class="menu-item">about</a></li>
+                <li><a href="#skills" class="menu-item">skills</a></li>
+                <li><a href="#portfolio" class="menu-item">portfolio</a></li>
+                <li><a href="tel:0902340111" class="menu-item">tel: <span class="normal-bold">0902-340-111</span></a></li>
+                <li><a href="mailto:workhanh79@gmail.com" class="menu-item">email: <span class="normal-bold">workhanh79@gmail.com</span></a></li>
+            </ul>
+        </div>
+    </menu>
+
+    <header class="hero">
+        <div class="hero-rectangle"></div>
+        <div class="container-fluid">
+            <!-- Open menu -->
+            <box-icon name='menu-alt-left' animation="tada" class="menu-open"></box-icon>
+            <box-icon name='menu-alt-left' animation="tada" class="menu-open-responsive" color='#ffffff' ></box-icon>
+            <!-- Open menu -->
+
+            <ul>
+                <li><a href="#about" class="heroItem">About me</a></li>
+                <li><a href="#skills" class="heroItem">Skills</a></li>
+                <li><a href="#portfolio" class="heroItem">Portfolio</a></li>
+                <li><a href="#contact" class="heroItem blackText">Contact</a></li>
+            </ul>      
+
+            <div class="hero-content">
+                <div class="hero-content__text">
+                    <h3 class="hero-content__text-heading">Hi, I am</h3>
+                    <h1 class="hero-content__text-name">Truong Quoc Khanh</h1>
+                    <p class="hero-content__text-job">Front-end Developer</p>
+
+                    <div class="hero-content-social">
+                        <a href="https://github.com/https://github.com/binnehaha321" target="_blank" class="hero-content-social__github">
+                            <box-icon type='logo' class="social-logo" name='github'></box-icon>
+                        </a>
+                        <a href="https://fb.com/binneahihi" target="_blank" class="hero-content-social__facebook">
+                            <box-icon type='logo' class="social-logo" name='facebook-square'></box-icon>
+                        </a>
+                        <a href="https://linkedin.com/in/tqk" target="_blank" class="hero-content-social__linkedin">
+                            <box-icon type='logo' class="social-logo" name='linkedin-square'></box-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-content__img">
+                <img loading="lazy" src="./images/hero-image.png" alt="myself">
+            </div>
+
+            <div class="social-responsive">
+                <a href="https://github.com/https://github.com/binnehaha321" target="_blank">
+                    <box-icon name='github' class="social-logo" type='logo' color='#ffffff'></box-icon>
+                </a>
+                <a href="https://fb.com/binneahihi" target="_blank">
+                    <box-icon name='facebook-square' class="social-logo" type='logo' color='#ffffff'></box-icon>
+                </a>
+                <a href="https://linkedin.com/in/tqk" target="_blank">
+                    <box-icon name='linkedin-square' class="social-logo" type='logo' color='#ffffff'></box-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="summary" id="summary">
+        <div class="container-fluid">
+            <div class="summary-content">
+                <h2 class="summary-content-heading heading">Summary</h2>
+                <p class="summary-content-desc desc">
+                    I have a strong sense of responsibility and team spirit. I am a young, energetic and open-minded person who loves to learn new technology, while at  the same time supporting my colleagues. I am excellent in English and computer skills with a diligent work ethic. I have good interpersonal skills to communicate with various people from different backgrounds including my colleagues, customers, business partners or personal friends on diverse topics. In addition to that, I am highly self-motivated and responsible for managing my own work content on both external/ internal projects which makes me very flexible in adapting new requirements from different stakeholders. I have been studying and working in the field for over 3 years and love what I do every day.
+                </p>
+                <button class="summary-content-btn btn-dark">
+                    <a href="./TPHCM_Trương Quốc Khánh_Intern Front End.pdf" download></a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <main class="about" id="about">
+        <div class="container">
+
+            <!-- About top -->
+            <div class="about-top flex-col">
+                <div class="about-heading heading">
+                    <h2>about me</h2>
+                </div>
+                
+                <div class="about-top-container">
+
+                    <div class="about-desc desc">
+                        <p>
+                            I am now a junior majoring in Information Technology. I enjoy working as a Front End developer. We all know technology is rapidly growing, and I always welcome more new challenges in self-learning. To follow my learning progress and more interesting things about me, please scroll to below.
+                        </p>
+                    </div>
+
+                    <button class="about-btn btn-light">
+                        <a href="#portfolio">explore</a>
+                    </button>
+
+                    <div class="about-top-separator">
+                        <img loading="lazy" src="./images/seperator.png" alt="separator">
+                    </div>
+                </div>
+            </div>
+
+            <!-- About bottom -->
+            <div class="about-bottom flex-col" id="skills">
+                <div class="about-heading heading">
+                    <h2>skills</h2>
+                </div>
+
+                <div class="about-bottom-container">
+                    <h3 class="heading">using now</h3>
+                    <ul>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/using/html.svg" alt="">
+                            <p>html5</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/using/css.svg" alt="">
+                            <p>css3</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/using/sass.svg" alt="">
+                            <p>sass</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/using/js.svg" alt="">
+                            <p>javascript</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/using/react.svg" alt="">
+                            <p>reactjs</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/using/boot.svg" alt="">
+                            <p>bootstrap</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/using/git.png" alt="">
+                            <p>git</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/using/figma.svg" alt="">
+                            <p>figma</p>
+                        </li>
+                    </ul>
+
+                    <h3 class="heading">hobbies</h3>
+                    <ul>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/hobbies/code.svg" alt="">
+                             <p>coding</p>
+                         </li> 
+                        <li class="use-hobbies">
+                           <img loading="lazy" src="./images/about/hobbies/sing.svg" alt="">
+                            <p>singing</p>
+                        </li> 
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/hobbies/guitar.svg" alt="">
+                            <p>guitar</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/hobbies/piano.svg" alt="">
+                            <p>piano</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/hobbies/football.svg" alt="">
+                            <p>football</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/hobbies/tennis.svg" alt="">
+                            <p>tennis</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/hobbies/english.svg" alt="">
+                            <p>english</p>
+                        </li>
+                        <li class="use-hobbies">
+                            <img loading="lazy" src="./images/about/hobbies/book.svg" alt="">
+                            <p>reading</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container-fluid">
+            <div class = "portfolio-header">
+                <div class="portfolio-header-heading heading about-heading">
+                    <h2>portfolio</h2>
+                </div>
+
+            </div>
+
+            <div class="portfolio-category">
+                <ul>
+                    <li class="list active" data-filter="all">
+                        <box-icon type='solid' name='grid' color="#ffffff" data-filter="all" class="portfolio-category-logo"></box-icon>
+                    </li>
+                
+                    <li class="list" data-filter="coding">
+                        <box-icon name='code' color='#ffffff' data-filter="coding" class="portfolio-category-logo"></box-icon>
+                    </li>
+                
+                    <li class="list" data-filter="activities">
+                        <box-icon name='music' color='#ffffff' data-filter="activities" class="portfolio-category-logo"></box-icon>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="portfolio-footer">
+                <div class="portfolio-footer-img itemBox coding">
+                    <img loading="lazy" src="./images/portfolio/img1.jpg" alt="img-1">
+                </div>
+                <div class="portfolio-footer-img itemBox activities">
+                    <img loading="lazy" src="./images/portfolio/img2.jpg" alt="img-2">
+                </div>
+                <div class="portfolio-footer-img itemBox activities">
+                    <img loading="lazy" src="./images/portfolio/img3.jpg" alt="img-3">
+                </div>
+                <div class="portfolio-footer-img itemBox activities">
+                    <img loading="lazy" src="./images/portfolio/img4.jpg" alt="img-4">
+                </div>
+                <div class="portfolio-footer-img itemBox coding">
+                    <img loading="lazy" src="./images/portfolio/img5.jpg" alt="img-5">
+                </div>
+                <div class="portfolio-footer-img itemBox activities">
+                    <img loading="lazy" src="./images/portfolio/img6.jpg" alt="img-6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-top flex-col">
+                <div class="contact-top-heading heading about-heading">
+                    <h2>contact</h2>
+                </div>
+                <div class="contact-top-desc desc">
+                    <p>
+                        Are you interested in my resume? If you are intending to hire me, please let me know by leaving an email or you can also find my phone number below.
+                    </p>
+                </div>
+                <img loading="lazy" src="./images/seperator.png" alt="seperator">
+            </div>
+            <div class="contact-bottom">
+                <form action="mailto:workhanh79@gmail.com" method="POST" enctype=”multipart/form-data” class="flex-col">
+                    <input disabled type="text" value="truong quoc khanh" class="contact-bottom__name" disabled value="">
+                    <input disabled type="text" value="workhanh79@gmail.com" class="contact-bottom__email">
+                    <input disabled type="text" value="0902 340 111" class="contact-bottom__phone" maxlength="10">
+                    <input disabled value="tap on the 'send email' button to leave an email." class="contact-bottom__message large"></input>
+                    <input disabled value="tap on the 'send email' button" class="contact-bottom__message small"></input>
+                    <button type="submit" class="btn-light__bigger">send email</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="#">
+                <img loading="lazy" src="./images/arrow-up.svg" alt="arrow-up">
+            </a>
+            <h2 class="footer-heading heading"><a href="#" style="color: #FFF;">back to top</a></h2>
+            <ul>
+                <a href="https://fb.com/binneahihi">
+                    <li>
+                        <img loading="lazy" src="./images/footer/facebook.svg" alt="facebook">
+                    </li>
+                </a>
+                <a href="https://instagram.com/binneahihi">
+                    <li>
+                        <img loading="lazy" src="./images/footer/instagram.svg" alt="instagram">
+                    </li>
+                </a>
+                <a href="https://linkedin.com/in/tqk">
+                    <li>
+                        <img loading="lazy" src="./images/footer/linkedin.svg" alt="linkedin"> 
+                    </li>
+                </a>
+                <a href="mailto:workhanh79@gmail.com">
+                    <li>
+                        <img loading="lazy" src="./images/footer/mail.svg" alt="mail">
+                    </li>
+                </a>
+            </ul>
+            <p>&#169; 2021 Powered by <strong>Truong Quoc Khanh</strong></p>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- My internal query -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.list').click(function () {
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.itemBox').show('1000');
+                }
+                else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            })
+
+            $('.list').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
+</body>
+</html>

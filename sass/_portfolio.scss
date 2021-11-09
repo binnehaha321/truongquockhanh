@@ -1,0 +1,184 @@
+.portfolio {
+    background-color: #1A1A1A;
+
+    &-header {
+        background-image: url("../images/portfolio/portfolio.png");
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url("../images/portfolio/portfolio.png");
+        background-size: contain;
+        height: 370px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &-heading {
+            position: absolute;
+            top: 107px;
+            right: 0;
+            left: 0;
+            text-align: center;
+
+            h2 {
+                letter-spacing: 0.43538em;
+                max-width: 482px;
+            }
+        }
+    }
+
+    &-category {
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 0 50px;
+            margin: 32px auto;
+
+            li {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #FFFBFB;
+                padding: 20px 60px;
+                display: inline-block;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: .65;
+                }
+
+                & > box-icon {
+                    display: none;
+                }
+
+                &:first-child::before {
+                    content: "all";
+                }
+
+                &:nth-child(2):before {
+                    content: "coding";
+                }
+
+                &:last-child::before {
+                    content: "activities";
+                }
+            }
+        }
+    }
+
+    &-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        &-img {
+            // set height de cac hinh anh co cung do cao
+            height: 100%;
+            width: 100%;
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .portfolio {
+        &-category ul {
+            display: block;
+            padding: 0 30px;
+            text-align: center;
+
+        & a {
+            display: inline-block;
+            padding: 20px 30px;
+            width: 160px;
+        }
+    }
+        
+        &-footer {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .portfolio {
+        &-category ul {
+            padding: 0 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .portfolio-header-heading h2 {
+        max-width: 350px;
+    }
+
+    .portfolio-category {
+        ul {
+            li {
+
+                &:first-child::before,
+                &:nth-child(2)::before,
+                &:last-child::before {
+                    display: none;
+                }
+
+                & > box-icon {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .portfolio-category {
+        ul {
+            display: flex;
+            gap: 0;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio-header-heading h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .portfolio-header-heading h2 {
+        max-width: 300px;
+        font-size: 25px;
+    }
+
+    .portfolio-category {
+        ul li {
+            padding: 20px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .portfolio-category {
+        ul {
+            display: inline-block;
+
+            li {
+                padding: 20px 60px;
+            }
+        }
+    }
+}

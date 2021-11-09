@@ -1,0 +1,89 @@
+.summary {
+    background-color: rgba(29, 29, 29, 1);
+
+    &-content {
+        padding: 54px 25% 50px 102px;
+        color: #FFFFFF;
+
+        &-desc {
+            text-align: justify;
+        }
+
+        &-btn {
+            height: 32px;
+            position: relative;
+
+            a::before {
+                content: "Download my resume";
+                position: relative;
+                z-index: 2;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0%;
+                background-color: #CF649A;
+                z-index: 1;
+                transition: width 2s linear;
+                -webkit-transition: width 2s linear;
+                -moz-transition: width 2s linear;
+                -ms-transition: width 2s linear;
+                -o-transition: width 2s linear;
+}
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            &:hover {
+                border: 1px solid #CF649A;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 846px) {
+    .summary-content {
+        padding-right: 102px;
+
+        &-btn {
+            display: block;
+            margin: 0 auto;
+            line-height: 0;
+
+            a::before {
+                content: "my resume";
+            }
+        }
+
+        &-heading {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .summary-content {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .summary-content {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .summary-content {
+        padding: 50px 10px;
+
+        &-desc {
+            font-size: 15px;;
+        }
+    }
+}

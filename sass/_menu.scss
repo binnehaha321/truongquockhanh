@@ -1,0 +1,105 @@
+.menu {
+    // display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 470px;
+    height: auto;
+    padding: 100px 50px 0 50px;
+    background-color: #FFF;
+    box-shadow: 0 0 16px #000;
+    z-index: 999;
+    will-change: transform;
+    transition: transform 0.2s linear;
+    -webkit-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    -ms-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    transform: translateX(-105%);
+    -webkit-transform: translateX(-105%);
+    -moz-transform: translateX(-105%);
+    -ms-transform: translateX(-105%);
+    -o-transform: translateX(-105%);
+
+    &-item {
+        text-transform: capitalize;
+        line-height: 1.6;
+    }
+
+    &-close, &-close-responsive {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 200ms;
+        -webkit-transition: 200ms;
+        -moz-transition: 200ms;
+        -ms-transition: 200ms;
+        -o-transition: 200ms;
+        opacity: .45;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &-close-responsive {
+            display: none;
+        }
+    }
+    
+    &-container {
+
+        ul {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            a {
+                display: block;
+                padding: 20px;
+                transition: 200ms;
+                -webkit-transition: 200ms;
+                -moz-transition: 200ms;
+                -ms-transition: 200ms;
+                -o-transition: 200ms;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+                
+                &:hover, &:focus, &:active {
+                    background-color: #000;
+                    color: $whiteText;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+        width: 100%;
+        background-color: #000;
+        text-align: center;
+        
+        &-item {
+            color: #FFF;
+            font-size: 30px;
+        }
+
+        &-close {
+            display: none;
+        } 
+
+        &-close-responsive {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
