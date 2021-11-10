@@ -50,7 +50,7 @@
 
                 li {
                     display: inline;
-                    
+                        
                     & p {
                     text-transform: uppercase;
                     font-family: 'Montserrat', sans-serif;
@@ -65,9 +65,13 @@
                     letter-spacing: 0.13538em;
                     color: #000000;
                     margin-top: 17px;
+                    }
                 }
             }
-        }
+
+            & .finger {
+                display: none;
+            }
 
             &:last-child {
                 li img {
@@ -97,6 +101,16 @@
                 scroll-snap-stop: always;
             }
         }
+
+        & .finger {
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            position: relative;
+            animation: slideRight 2s infinite ease;
+            -webkit-animation: slideRight 2s infinite ease;
+}
     }
 }
 

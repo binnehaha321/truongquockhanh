@@ -148,17 +148,15 @@
             display: flex;
             gap: 0;
             overflow: hidden;
+
+            li {
+                padding: 20px 50px;
+            }
         }
     }
 }
 
-@media screen and (max-width: 375px) {
-    .portfolio-header-heading h2 {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 390px) {
     .portfolio-header-heading h2 {
         max-width: 300px;
         font-size: 25px;
@@ -171,7 +169,7 @@
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
     .portfolio-category {
         ul {
             display: inline-block;
